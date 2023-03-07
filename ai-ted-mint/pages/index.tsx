@@ -312,6 +312,7 @@ const Home: NextPage = () => {
                         {buttonLoading ? "Loading..." : buttonText}
                       </Web3Button>
                     )}
+                    
                   </div>
                 </>
               )}
@@ -319,7 +320,8 @@ const Home: NextPage = () => {
           </>
         )}
       </div>
-      {/* Powered by thirdweb */}{" "}
+      <div className={styles.row}>
+      Powered by         
       <Image
         src="/logo.png"
         alt="thirdweb Logo"
@@ -330,6 +332,8 @@ const Home: NextPage = () => {
           objectFit: "contain",
         }}
       />
+      </div>
+      
     </div>
   );
 };

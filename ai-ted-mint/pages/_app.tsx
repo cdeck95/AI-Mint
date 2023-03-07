@@ -12,15 +12,15 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider desiredChainId={activeChainId}>
       <Head>
-        <title>thirdweb NFT Drop Minting Customizable Page</title>
+        <title>FOTF | AI Ted Mint</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Learn How To Use Thirdweb's NFT Drop contract and create a customizable NFT Drop minting page"
+          content="Fully Generate Recreation of the Original 9671 Fury Teds from Fury Of The Fur. Artwork created by a community member using Starry AI. No Utility. Just Art and Testing."
         />
         <meta
           name="keywords"
-          content="Thirdweb, thirdweb NFT drop, how to make thirdweb nft drop, how to make nft collection thirdweb"
+          content="FOTF, AI Teds, AI Ted Mint, fury of the fur"
         />
       </Head>
       <Component {...pageProps} />

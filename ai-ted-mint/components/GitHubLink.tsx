@@ -1,8 +1,9 @@
 import styles from "../../styles/Thirdweb.module.css";
 import React from "react";
+import sblLogo from './SBL_Logo.jpg';
 
 export default function ThirdwebGuideFooter() {
-  const url = "https://github.com/thirdweb-example/custom-minting-page";
+  const url = "https://www.sneakybirdlabs.com/";
   return (
     <>
       <div
@@ -24,13 +25,13 @@ export default function ThirdwebGuideFooter() {
       <div
         style={{
           position: "fixed",
-          bottom: 14,
-          right: 18,
+          bottom: 10,
+          right: 15,
         }}
       >
         <img
-          src={"/github.png"}
-          width={40}
+          src={sblLogo.src}
+          width={50}
           height={40}
           role="button"
           style={{ cursor: "pointer" }}
