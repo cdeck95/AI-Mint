@@ -15,7 +15,7 @@
   --color-secondary: #000000;
 
   /* Which font you want to use */
-  --font: "Inter", sans-serif;
+  --font: "Bebas Neue", sans-serif;
 
   /* Color of the border around items */
   --border-color: #FED100
@@ -39,5 +39,5 @@ body {
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }

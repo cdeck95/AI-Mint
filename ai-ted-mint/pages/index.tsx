@@ -18,6 +18,8 @@ import { useMemo, useState } from "react";
 import Timer from "../components/Timer";
 import styles from "../styles/Theme.module.css";
 import { parseIneligibility } from "../utils/parseIneligibility";
+import fotfLogo from './fotf.png';
+import LaunchIcon from '@mui/icons-material/Launch';
 
 // Put Your NFT Drop Contract address from the dashboard here
 const myNftDropContractAddress = "0x6E3D19341E0d655f3bD67f2a4B5D49763252940f";
@@ -210,6 +212,10 @@ const Home: NextPage = () => {
     quantity,
   ]);
 
+  const openStore = () => {
+    window.open("https://app.furyofthefur.com/store");
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.mintInfoContainer}>
@@ -218,15 +224,25 @@ const Home: NextPage = () => {
         ) : (
           <>
             <div className={styles.infoSide}>
+              <img src={fotfLogo.src} className={styles.fotf}/>
               {/* Title of your NFT Collection */}
-              <h1>{contractMetadata?.name}</h1>
+              <h1 className={styles.name}>AI Ted Mint <br></br> Cost: 100,000 $HNY</h1>
               {/* Description of your NFT Collection */}
               <p className={styles.description}>
-                {contractMetadata?.description}
+              Fully generated recreation of the Original 9671 Fury Teds from Fury Of The Fur.<br></br>
+              <br></br>Artwork created by a community member using Starry AI. <br></br>
+              <br></br>No Utility. Just Art and Testing.
+
               </p>
             </div>
-
+           
             <div className={styles.imageSide}>
+            <div className={styles.column}>
+
+              
+              <button onClick={openStore} className={styles.buyHNYButton}>
+                Buy $HNY 
+                </button>
               {/* Image Preview of NFTs */}
               <MediaRenderer
                 className={styles.image}
@@ -314,8 +330,10 @@ const Home: NextPage = () => {
                     )}
                     
                   </div>
+                  
                 </>
               )}
+            </div>
             </div>
           </>
         )}

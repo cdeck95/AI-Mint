@@ -13,10 +13,14 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ThirdwebProvider desiredChainId={activeChainId}>
       <Head>
         <title>FOTF | AI Ted Mint</title>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap&family=Roboto"
+        rel="stylesheet"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Fully Generate Recreation of the Original 9671 Fury Teds from Fury Of The Fur. Artwork created by a community member using Starry AI. No Utility. Just Art and Testing."
+          content="Fully Generated Recreation of the Original 9671 Fury Teds from Fury Of The Fur. Artwork created by a community member using Starry AI. No Utility. Just Art and Testing."
         />
         <meta
           name="keywords"
