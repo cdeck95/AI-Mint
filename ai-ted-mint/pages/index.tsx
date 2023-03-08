@@ -240,7 +240,7 @@ const Home: NextPage = () => {
             <div className={styles.column}>
 
               
-              <button onClick={openStore} className={styles.buyHNYButton}>
+              <button onClick={() => openStore()} className={styles.buyHNYButton}>
                 Buy $HNY 
                 </button>
               {/* Image Preview of NFTs */}

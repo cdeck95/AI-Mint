@@ -10,7 +10,7 @@ const activeChainId = ChainId.Goerli;
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThirdwebProvider desiredChainId={activeChainId}>
+    <ThirdwebProvider activeChain={activeChainId}>
       <Head>
         <title>FOTF | AI Ted Mint</title>
         <link
@@ -27,6 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="FOTF, AI Teds, AI Ted Mint, fury of the fur"
         />
       </Head>
+      {/* @ts-expect-error Server Component */} 
       <Component {...pageProps} />
       <ThirdwebGuideFooter />
     </ThirdwebProvider>
