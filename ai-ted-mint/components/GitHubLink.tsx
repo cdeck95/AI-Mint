@@ -1,6 +1,7 @@
 import styles from "../styles/Theme.module.css";
 import React from "react";
 import sblLogo from './SBL_Logo.jpg';
+import Image from "next/image";
 
 
 export default function ThirdwebGuideFooter() {
@@ -32,14 +33,13 @@ export default function ThirdwebGuideFooter() {
           right: 15,
         }}
       >
-        <img
+        <Image
           src={sblLogo.src}
           width={50}
           height={30}
           role="button"
           style={{ cursor: "pointer" }}
-          onClick={() => window.open(url, "_blank")}
-        />
+          onClick={() => window.open(url, "_blank")} alt={"SBL Logo"}        />
       </div>
     </>
   );

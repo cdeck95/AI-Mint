@@ -224,7 +224,7 @@ const Home: NextPage = () => {
         ) : (
           <>
             <div className={styles.infoSide}>
-              <img src={fotfLogo.src} className={styles.fotf}/>
+              <Image src={fotfLogo.src} className={styles.fotf} alt={"FOTF Logo"}/>
               {/* Title of your NFT Collection */}
               <h1 className={styles.name}>AI Ted Mint <br></br> Cost: 100,000 $HNY</h1>
               {/* Description of your NFT Collection */}
