@@ -47,13 +47,10 @@
 }
 
 .fotf {
-  width: auto;
-  height: auto;
+  width: 400px;
+  height: 200px;
   margin: 0%;
   padding: 0%;
-  min-height: 200px;
-  min-width: 350px;
-  max-width: 400px;
 }
 
 .description {
@@ -293,5 +290,10 @@
 
   .imageSide {
     width: 100%;
+  }
+
+  .fotf {
+    width: 300px;
+    height: 150px;
   }
 }
