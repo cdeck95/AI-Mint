@@ -237,7 +237,7 @@ const Home: NextPage = () => {
         ) : (
           <>
             <div className={styles.infoSide}>
-            <div style={{ width: "100%", height: "200px", position: "relative", textAlign:"center"}} >
+            <div style={{ width: "99%", height: "200px", position: "relative", textAlign:"center"}} >
               <Image src={fotfLogo.src} width={300} height={150} className={styles.fotf} alt={"FOTF Logo"} />
             </div>
                {/* Title of your NFT Collection */}

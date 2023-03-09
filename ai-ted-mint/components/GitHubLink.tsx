@@ -47,7 +47,7 @@ export default function ThirdwebGuideFooter() {
         onClick={() => window.open(url, "_blank")}
       />
 
-      <p className={isMobile? styles.footer : ""}>For security thid mint is a stand alone site. <br></br>For more information, visit <a className={styles.footerDesc} href="https://www.furyofthefur.com">furyofthefur.com</a></p>
+      <p className={isMobile? styles.footer : ""}>For security, this mint is a stand alone site. <br></br>For more information, visit <a className={styles.footerDesc} href="https://www.furyofthefur.com">furyofthefur.com</a></p>
 
       <div
         style={{
