@@ -11,10 +11,14 @@ import {
   useUnclaimedNFTSupply,
   Web3Button,
 } from "@thirdweb-dev/react";
+import {
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import { BigNumber, utils } from "ethers";
 import type { NextPage } from "next";
 import Image from "next/image";
-import { useMemo, useState } from "react";
+import { useMemo, useEffect, useState } from "react";
 import Timer from "../components/Timer";
 import styles from "../styles/Theme.module.css";
 import { parseIneligibility } from "../utils/parseIneligibility";
@@ -26,6 +30,15 @@ const myNftDropContractAddress = "0x6E3D19341E0d655f3bD67f2a4B5D49763252940f";
 
 const Home: NextPage = () => {
   const { contract: nftDrop } = useContract(myNftDropContractAddress);
+
+  const theme = useTheme();
+  const isMobile = !useMediaQuery(theme.breakpoints.up("md"));
+
+  useEffect(() => {
+    if(isMobile){
+      return;
+    } 
+  }, [isMobile]);
 
   const address = useAddress();
   const [quantity, setQuantity] = useState(1);
@@ -224,8 +237,10 @@ const Home: NextPage = () => {
         ) : (
           <>
             <div className={styles.infoSide}>
-              <Image src={fotfLogo.src} className={styles.fotf} alt={"FOTF Logo"}/>
-              {/* Title of your NFT Collection */}
+            <div style={{ width: "100%", height: "200px", position: "relative", textAlign:"center"}} >
+              <Image src={fotfLogo.src} width={300} height={150} className={styles.fotf} alt={"FOTF Logo"} />
+            </div>
+               {/* Title of your NFT Collection */}
               <h1 className={styles.name}>AI Ted Mint <br></br> Cost: 100,000 $HNY</h1>
               {/* Description of your NFT Collection */}
               <p className={styles.description}>
@@ -236,7 +251,7 @@ const Home: NextPage = () => {
               </p>
             </div>
            
-            <div className={styles.imageSide}>
+            <div className={isMobile? styles.imageSideMobile : styles.imageSide}>
             <div className={styles.column}>
 
               
