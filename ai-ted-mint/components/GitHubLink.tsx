@@ -15,7 +15,7 @@ export default function ThirdwebGuideFooter() {
 
   const [cornerHeight, setCornerHeight] = useState(300); 
   const [cornerWidth, setCornerWidth] = useState(150); 
-  const [rightOffset, setRightOffset] = useState(15); 
+  const [rightOffset, setRightOffset] = useState(14); 
   const [bottomOffset, setBottomOffset] = useState(10); 
 
   useEffect(() => {
