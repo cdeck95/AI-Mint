@@ -27,6 +27,8 @@ import LaunchIcon from '@mui/icons-material/Launch';
 
 // Put Your NFT Drop Contract address from the dashboard here
 const myNftDropContractAddress = "0x1C6d280280f7f8d139659E314d738bdD466741Ba";
+//const myNftDropContractAddress = "0x6E3D19341E0d655f3bD67f2a4B5D49763252940f";
+
 
 const Home: NextPage = () => {
   const { contract: nftDrop } = useContract(myNftDropContractAddress);
