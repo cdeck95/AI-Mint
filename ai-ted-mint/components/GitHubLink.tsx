@@ -15,7 +15,7 @@ export default function ThirdwebGuideFooter() {
 
   const [cornerHeight, setCornerHeight] = useState(300); 
   const [cornerWidth, setCornerWidth] = useState(150); 
-  const [rightOffset, setRightOffset] = useState(14); 
+  const [rightOffset, setRightOffset] = useState(15); 
   const [bottomOffset, setBottomOffset] = useState(10); 
 
   useEffect(() => {
@@ -58,8 +58,8 @@ export default function ThirdwebGuideFooter() {
       >
         <Image
           src={sblLogo.src}
-          width={isMobile? 40 : 50}
-          height={isMobile? 25 : 30}
+          width={isMobile? 40 : 45}
+          height={isMobile? 25 : 28}
           role="button"
           style={{ cursor: "pointer" }}
           onClick={() => window.open(url, "_blank")} alt={"SBL Logo"}        />
