@@ -34,11 +34,7 @@ const Home: NextPage = () => {
   const theme = useTheme();
   const isMobile = !useMediaQuery(theme.breakpoints.up("md"));
 
-  // useEffect(() => {
-  //   if(isMobile){
-  //     return;
-  //   } 
-  // }, [isMobile]);
+  
 
   const address = useAddress();
   const [quantity, setQuantity] = useState(1);
@@ -254,10 +250,12 @@ const Home: NextPage = () => {
             <div className={isMobile? styles.imageSideMobile : styles.imageSide}>
             <div className={styles.column}>
 
-              
-              <button onClick={() => openStore()} className={styles.buyHNYButton}>
+            <div className={styles.rowLarge} >
+                <button onClick={() => openStore()} className={styles.buyHNYButton}>
                 Buy $HNY 
                 </button>
+            </div>
+             
               {/* Image Preview of NFTs */}
               <MediaRenderer
                 className={styles.image}
